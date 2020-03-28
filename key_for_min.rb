@@ -4,15 +4,16 @@
 def key_for_min_value(name_hash)
   comparator = []
   return_key = ""
-  hash_value_array = []
-  hash_key_array = []
-  
-  name_hash.each do |key, value|
-    hash_key_array << key
-    hash_value_array << value
-  end
   
   while name_hash.length > 1
+    hash_value_array = []
+    hash_key_array = []
+  
+    name_hash.each do |key, value|
+      hash_key_array << key
+      hash_value_array << value
+    end
+    
     name_hash.each do |key, value|
       name_hash.length.times do |x|
         comparator << (value <=> hash_value_array[x])
