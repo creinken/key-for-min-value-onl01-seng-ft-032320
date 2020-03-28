@@ -24,6 +24,6 @@ def key_for_min_value(name_hash)
       end
     end
   end
-  
+  name_hash.map{ |key, value| return_key = key}
   return_key == "" ? nil : return_key
 end
