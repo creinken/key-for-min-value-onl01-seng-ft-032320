@@ -1,7 +1,6 @@
 require_relative "../key_for_min.rb"
 
 describe "#smallest_hash_value" do
-
   it "does not call the `#keys` method" do
     hash = {:blake => 500, :ashley => 2, :adam => 1}
 
