@@ -11,6 +11,7 @@ def key_for_min_value(name_hash)
       end
       if comparator.any?(-1)
         name_hash.delete(key)
+        comparator = []
       end
     end
   end
