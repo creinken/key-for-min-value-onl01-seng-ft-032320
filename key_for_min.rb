@@ -13,6 +13,7 @@ def key_for_min_value(name_hash)
         name_hash.delete(key)
       end
     end
-    return_key == "" ? nil : return_key
   end
+  
+  return_key == "" ? nil : return_key
 end
