@@ -18,7 +18,7 @@ def key_for_min_value(name_hash)
       name_hash.length.times do |x|
         comparator << (value <=> hash_value_array[x])
       end
-      if comparator.any?(-1)
+      if comparator.any?(1)
         name_hash.delete(key)
         comparator = []
       end
